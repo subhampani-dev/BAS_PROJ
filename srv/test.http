@@ -1,0 +1,7 @@
+get http://localhost:4004/SAP/Order/Odata/Emp
+
+###
+post http://localhost:4004/SAP/Order/Odata/OrderSet
+Content-Type: application/json
+
+{"ORDERID":6,"CUSTOMER_NAME":"A","CONTACT_PERSON":"Q","GROSS_AMOUNT":12,"CURRENCY":"I"}

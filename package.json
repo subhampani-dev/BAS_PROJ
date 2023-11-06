@@ -1,0 +1,30 @@
+{
+  "name": "MAIN_CAPM",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-dk": "^7.3.2",
+    "@sap/cds-hana": "^2",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.108.16"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-salesrderapp": "cds watch --open salesrderapp/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "db": "hana"
+    }
+  },
+  "sapux": [
+    "app/salesrderapp"
+  ]
+}
